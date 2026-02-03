@@ -27,7 +27,7 @@ img {
 /* Image styling — rectangular */
 div img {
     width: 150px;
-    height: auto;
+    height: 100px;   /* rectangular, consistent */
     display: block;
     margin: auto;
 }
