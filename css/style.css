@@ -1,60 +1,97 @@
-body {
-    background-color: #dedede;
+body{
+	margin: 1%;
+	padding:1%;
+	background-color: rgba(0,0,255,.2);
+	font-size: 100%;
+	min-width: 500px;
+}
+header, footer{
+  background-color:#0066FF;
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 3rem;
+	color:rgba(0,0,0,.7);
+}
+
+section{
+  	margin:1%;
+    	padding:1%;
+}
+
+nav a{
+	display:block;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 35px;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
 }
 
 h1 {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 32px;
+	text-align: center;
+	color:rgba(255,0,0,.7);
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */	
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
 }
 
-p {
-    font-size: 25px;
-    font-family: Arial, sans-serif;
-    text-align: center;
+ol{
+	list-style:upper-roman; 
+	margin:1em;
+}
+img{
+	display: none;
 }
 
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 900px) {
+header, footer {
+  	background-color:transparent;
+}
 img {
-    width: 100%;
-    height: auto;
+	display: block;
+	width: 15vw;
+	float: left;
+	margin: 1rem 1rem 1rem 0;
+}
+h1::after {
+	content: "(I guess...)";
+}
+nav a:link, nav a:visited { color: #000; }
+section#left { float: left;}
 }
 
-div {
-    display: inline-block;
-    width: 100%;
-    margin: 5px;
-    padding: 2px;
+@media print {
+	
+body{
+	background-color: #fff;
 }
-
-/* =========================
-   TABLET VIEW (772px)
-   ========================= */
-@media screen and (min-width: 772px) {
-
-    div {
-        width: 45vw;          /* 45% of viewport width */
-        vertical-align: top;
-    }
-
-    div img {
-        max-height: 30vh;     /* 30% of viewport height */
-        width: 100%;
-        object-fit: contain;
-    }
+header, footer{
+	background-color:#fff;
 }
-
-/* =========================
-   LARGE SCREEN VIEW (998px)
-   ========================= */
-@media screen and (min-width: 998px) {
-
-    div {
-        width: 30vw;          /* 30% of viewport width */
-    }
+nav a{
+	background-color: white;
+	border: none;
+	padding:0;
+	margin:0;
+}
+.myClass { column-count: 1; }
 }
