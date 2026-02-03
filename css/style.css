@@ -150,13 +150,17 @@ header {
   div {
     width: 45vw;
     vertical-align: top;
+    text-align: center;
   }
 
   div img {
     max-height: 30vh;
     width: auto;
+    height: auto;
+    object-fit: contain;
   }
 }
+
 
 /* =========================
    Large Screen View (998px)
@@ -164,6 +168,15 @@ header {
 @media screen and (min-width: 998px) {
   div {
     width: 30vw;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  div img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 }
+
 
